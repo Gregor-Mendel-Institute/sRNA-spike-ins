@@ -5,10 +5,23 @@ Scripts and example graphs are organized into nine main directories:
 
 1. methods.sRNA.spike.in.design contains files used to design and evaluate sRNA spike-ins.
 
-To generate a random set of 21 base sequences with characteristics similar to endogenous miRNAs, run this command in the methods.sRNA.spike.in.design directory: 
+Run the following command in the methods.sRNA.spike.in.design directory to generate 1) a fasta file of the top 50% expressed mature miRNAs (i.e. mature.miRNA.seqs.top50percent.fa) and 2) a fasta file of 21 base sequences with characteristics similar to endogenous miRNAs (i.e. random.fa): 
 ```shell
 python methods.sRNA.spike.in.design.step1.py
 ```
+
+Use Bowtie to select entries in random.fa generated from above step that do not map to Arabidopsis thaliana (TAIR10) genome, and output to a file called noMatch.fa.
+
+To determine the folding structures (i.e. mature.miRNA.seqs.top50percent_folded) and minimum free energies (MFEs) (i.e. mature.miRNA.seqs.top50percent_mfes) of the top 50% expressed mature miRNAs, run the following command in the methods.sRNA.spike.in.design directory:
+```shell
+python methods.sRNA.spike.in.design.step2.endogenous.miRNAs.py
+```
+To determine the folding structures (i.e. randomOligoSets/folded/X.fa_folded) and minimum free energies (MFEs) (i.e. randomOligoSets/folded/mfes/X_mfes) of semi-randomly generated sequences from above (i.e. noMatch.fa), run the following command in the methods.sRNA.spike.in.design directory:
+```shell
+python methods.sRNA.spike.in.design.step2.py
+```
+To examine distributions of MFEs for each randomly generated set, as well as for the sets specifically used in this manuscript and generated for Supplementary Figure 4 (../supplemental.figure.4/supplemental.figure.4.pdf) run the examine.MFE.distributions.R script. Please note that the MFE files used to generate the supplemental.figure.4.pdf have been deposited in the randomOligoSets/folded/mfes/ directory, but these will be different each time the above scripts are run.
+
 2. methods.data.analysis contains data analysis pipeline and processed data files for small RNA-Seq and mRNA-Seq analyses.
 3. figure.1 contains files used to generate graphs shown in Figure 1.
 4. figure.2 contains files used to generate graphs shown in Figure 2.
