@@ -6,10 +6,9 @@ Scripts and example graphs are organized into nine main directories:
 1. methods.sRNA.spike.in.design contains files used to design and evaluate sRNA spike-ins.
 
 To generate a random set of 21 base sequences with characteristics similar to endogenous miRNAs, run this command in the methods.sRNA.spike.in.design directory: 
-'''shell
+```shell
 python methods.sRNA.spike.in.design.step1.py
-'''
-
+```
 2. methods.data.analysis contains data analysis pipeline and processed data files for small RNA-Seq and mRNA-Seq analyses.
 3. figure.1 contains files used to generate graphs shown in Figure 1.
 4. figure.2 contains files used to generate graphs shown in Figure 2.
