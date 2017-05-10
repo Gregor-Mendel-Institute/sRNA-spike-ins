@@ -1,0 +1,14 @@
+The following files are contained within this directory:
+...matureFound: contains values for reads contained within tasiRNAs (+/- 2 bp) annotated by Allen et al. (2005) Cell and tasiRNAdb
+...abundantFound: contains values for most abundant tag overlapping each annotated TASIRNA locus
+...abundantNotMatureFound: contains values for most abundant tag overlapping each annotated TASIRNA locus if not contained in annotated tasiRNA
+...mature_byRpm: contains ordered list of mature tasiRNAs
+...families_byRpm: contains ordered list of families
+Number of annotated TASIRNA loci: 8
+Number of alignments to either strand of TASIRNA genes: 4120
+Number of (hit-normalized) reads (rpm) that map to either strand of TASIRNA genes: 139074.0 (0.01)
+Number of TASIRNA genes with sRNA reads: 7
+Number of tasiRNAs with corresponding reads: 108
+Number of reads determined to be most abundant for given TASIRNA: 7
+anno/total tasiRNA rpm: 8195.47/10501.38 0.78
+Number of TASIRNA loci with an unannotated tag being the most abundant: 2 0.29

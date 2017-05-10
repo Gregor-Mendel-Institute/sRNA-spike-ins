@@ -1,0 +1,3 @@
+common (miRNA) 	chromo 	start 	end 	strand 	sequence 	readNum_raw 	readNum_normHit 	readNum_normRpm
+TAS1B 	Ath_chr1 	18549549 	18549570 	+ 	ATGTTGGACTTAGAATATGCT 	737 	737.0 	55.6503784981
+TAS3B 	Ath_chr5 	20134531 	20134552 	+ 	CTTTTCTCTACTCTTTTCTGT 	225 	225.0 	16.9895999485
